@@ -10,10 +10,14 @@ int main()
 
     while(t--)
     {
-        ll n;
-        cin>>n;
-        
-        while(n)
+        ll l,r,temp,a,k,j;
+        cin>>l>>r;
+       
+       if(2*l<=r)
+       cout<<l<<" "<<2*l<<endl;
+       else
+       cout<<-1<<" "<<-1<<endl;
+
     }
     return 0;
 }
