@@ -1,10 +1,16 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<math.h>
 using namespace std;
-int main()
-{
-    string s;
-    getline(cin,s);
-    int n=s.length();
-    for(int i=n-1;i>=0;i--)
-    cout<<s[i];
+int main(){
+	int t;
+	cin>>t;
+	while(t--){
+		int n;
+		cin>>n;
+		int a = ceil((n*1.0)/4);
+		n=n-a;
+		while(n--) cout<<9;
+		while(a--) cout<<8;
+		cout<<endl;
+	}
 }

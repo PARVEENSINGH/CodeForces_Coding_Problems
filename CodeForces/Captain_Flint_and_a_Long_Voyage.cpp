@@ -9,30 +9,26 @@ int main() {
 	cin>>t;
 	while(t--)
 	{
-	   int n,s,temp,a=1;
+	   int n,s,temp;
 	   cin>>n;
 	   s=n;
-        int num=1;
-        while(n--)
+       n-=s/4;
+        while(n>1)
         {
-            num*=10;
+            cout<<"9";
+            n--;
         }
-        num-=2;
-        temp=s/4;
-        if(!temp)
+        temp=(s/4)+1;
+        if(s%4==0)
         {
-        cout<<num<<endl;
-        continue;
+        cout<<"9";    
+        temp-=1;
         }
-
-       while (temp--)
-       {
-            a*=10;
-            num-=a;
-       }
-       
-        
-        cout<<num<<endl;
+        while(temp--)
+        {
+           cout<<"8";
+        }    
+        cout<<endl;
 	}
 	return 0;
 }
