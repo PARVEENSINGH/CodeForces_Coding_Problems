@@ -5,6 +5,21 @@
 using namespace std;
 #define ll long long
 
+//void _initMap(map<string,vector<int>> &map)
+// {
+//     map["january"]={1,31};
+//     map["february"]={2,29};
+//     map["march"]={3,31};
+//     map["april"]={4,30};
+//     map["may"]={5,31};
+//     map["june"]={6,30};
+//     map["july"]={7,31};
+//     map["august"]={8,31};
+//     map["september"]={9,30};
+//     map["october"]={10,31};
+//     map["november"]={11,30};
+//     map["december"]={12,31};  
+// }
 const int mxn = 1000005;
 vector<bool> p(mxn+1, true);
 
